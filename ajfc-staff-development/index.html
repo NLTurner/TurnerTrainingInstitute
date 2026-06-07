@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>AJFC Staff Development | Turner Training Institute&trade;</title>
+<meta name="description" content="Private training resource center developed for AJFC Community Action Agency staff by Turner Training Institute." />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%230E2F33%22/%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%2213%22%20fill%3D%22%23C8893B%22/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F6F1E6; --paper-2:#EFE8D8; --ink:#0E2F33; --ink-soft:#22484C;
+    --teal:#1F6F78; --teal-deep:#16545C; --gold:#C8893B; --gold-deep:#A66E29;
+    --card:#FFFDF8; --line:#E3D9C6; --mist:#6E807F; --shadow:rgba(14,47,51,.09);
+    --serif:'Fraunces',Georgia,serif; --sans:'Hanken Grotesk',system-ui,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:980px;margin:0 auto;padding:0 24px}
+  a{color:inherit}
+  .btn{display:inline-block;font-weight:600;font-size:.92rem;padding:11px 20px;border-radius:30px;text-decoration:none;transition:transform .15s,box-shadow .15s,background .15s;cursor:pointer}
+  .btn-gold{background:var(--gold);color:#fff}
+  .btn-gold:hover{background:var(--gold-deep);transform:translateY(-2px)}
+  .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+  .btn-ghost:hover{border-color:var(--teal);color:var(--teal-deep)}
+
+  header.site{position:sticky;top:0;z-index:20;background:rgba(246,241,230,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  header.site .bar{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+  .brand .dot{width:14px;height:14px;border-radius:50%;background:var(--gold);flex-shrink:0}
+  .brand b{font-family:var(--serif);font-weight:600;font-size:1.05rem;color:var(--ink)}
+  .brand small{display:block;font-size:.72rem;color:var(--mist);letter-spacing:.04em}
+  .backlink{font-size:.9rem;color:var(--teal-deep);text-decoration:none;font-weight:600}
+  .backlink:hover{text-decoration:underline}
+
+  .hero{padding:64px 0 24px}
+  .eyebrow{font-size:.74rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-deep)}
+  .hero h1{font-family:var(--serif);font-size:2.6rem;line-height:1.08;margin:12px 0 18px;color:var(--ink)}
+  .hero p.lead{font-size:1.1rem;color:var(--ink-soft);max-width:70ch}
+
+  .usebox{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px 28px;margin-top:30px}
+  .usebox h2{font-family:var(--serif);font-size:1.2rem;color:var(--ink);margin-bottom:10px}
+  .usebox ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+  .usebox li{position:relative;padding-left:24px;color:var(--ink-soft);font-size:.97rem}
+  .usebox li::before{content:"";position:absolute;left:0;top:9px;width:8px;height:8px;border-radius:50%;background:var(--teal)}
+
+  section.mods{padding:46px 0}
+  .grouplabel{font-family:var(--serif);font-size:1.55rem;color:var(--ink);margin:34px 0 4px}
+  .grouplabel.first{margin-top:8px}
+  .grouplabel + .gsub{color:var(--mist);font-size:.95rem;margin-bottom:22px}
+
+  .mod{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px 30px;margin-bottom:20px;box-shadow:0 6px 16px var(--shadow);border-left:4px solid var(--teal)}
+  .mtag{font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-deep)}
+  .mod h3{font-family:var(--serif);font-size:1.32rem;line-height:1.15;margin:7px 0 10px;color:var(--ink)}
+  .mod p{font-size:.97rem;color:var(--ink-soft);margin-bottom:18px;max-width:75ch}
+  .mlinks{display:flex;gap:10px;flex-wrap:wrap}
+
+  section.about{background:var(--paper-2);padding:50px 0}
+  .about-card{max-width:820px}
+  .about-card h2{font-family:var(--serif);font-size:1.7rem;color:var(--ink);margin-bottom:14px}
+  .about-card p{color:var(--ink-soft);font-size:1.02rem}
+
+  footer{background:var(--ink);color:#CDE0DE;padding:40px 0;text-align:center}
+  footer .fbrand{font-family:var(--serif);color:#fff;font-size:1.15rem}
+  footer .tag{font-style:italic;color:#9FB8B6;margin:6px 0 14px}
+  footer a{color:var(--gold);text-decoration:none;font-weight:600}
+  footer .flinks{display:flex;gap:18px;justify-content:center;font-size:.9rem;margin-top:6px}
+
+  @media(max-width:760px){
+    .hero h1{font-size:2rem}
+    .brand small{display:none}
+    .mod{padding:22px 22px}
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="https://www.turnertraininginstitute.com/">
+      <span class="dot"></span>
+      <span><b>Turner Training Institute&trade;</b><small>A division of The Culture Pro&reg;</small></span>
+    </a>
+    <a class="backlink" href="https://www.turnertraininginstitute.com/">Main site &#8594;</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">For AJFC Community Action Agency Staff</span>
+    <h1>AJFC Community Action Agency Staff Training</h1>
+    <p class="lead">Welcome to your professional development hub. The trainings below were developed exclusively for AJFC Community Action Agency staff by Turner Training Institute&trade;. Watch each one at your own pace, download the companion resource guide, and return to this page anytime you need a refresher.</p>
+    <div class="usebox">
+      <h2>How to use this page</h2>
+      <ul>
+        <li>Watch the modules in order for the best learning experience.</li>
+        <li>Download the resource guide for each training to keep as a reference.</li>
+        <li>Revisit any training at any time. This page is yours to use as often as you need.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="mods">
+  <div class="wrap">
+    <h2 class="grouplabel first">Self-Paced Modules</h2>
+    <p class="gsub">Four modules you can watch on your own schedule.</p>
+
+    <article class="mod">
+      <span class="mtag">Module 1 &middot; About 32 min</span>
+      <h3>Results-Oriented Management and Accountability (ROMA)</h3>
+      <p>Introduces the ROMA framework and how data-driven decision-making connects your daily work to meaningful outcomes for the communities AJFC serves.</p>
+      <div class="mlinks">
+        <a class="btn btn-gold" href="https://youtu.be/AkISeVDaMfs" target="_blank" rel="noopener">Watch the video</a>
+        <a class="btn btn-ghost" href="AJFC_ROMA_ResourceGuide.pdf" target="_blank" rel="noopener">Download guide</a>
+      </div>
+    </article>
+
+    <article class="mod">
+      <span class="mtag">Module 2 &middot; About 30 min</span>
+      <h3>Quality Assurance</h3>
+      <p>Covers the standards, documentation practices, and internal review processes that keep AJFC programs effective, compliant, and consistently delivering for clients.</p>
+      <div class="mlinks">
+        <a class="btn btn-gold" href="https://youtu.be/jEJn5V6Qhno" target="_blank" rel="noopener">Watch the video</a>
+        <a class="btn btn-ghost" href="AJFC_QA_ResourceGuide.pdf" target="_blank" rel="noopener">Download guide</a>
+      </div>
+    </article>
+
+    <article class="mod">
+      <span class="mtag">Module 3 &middot; About 34 min</span>
+      <h3>Community Partnerships and Employer Engagement</h3>
+      <p>Explores how to build and sustain partnerships that expand resources and opportunities for the people AJFC serves, including strategies for engaging employers as active partners.</p>
+      <div class="mlinks">
+        <a class="btn btn-gold" href="https://youtu.be/HXvtIKshytE" target="_blank" rel="noopener">Watch the video</a>
+        <a class="btn btn-ghost" href="AJFC_Partnerships_ResourceGuide.pdf" target="_blank" rel="noopener">Download guide</a>
+      </div>
+    </article>
+
+    <article class="mod">
+      <span class="mtag">Module 4 &middot; About 38 min</span>
+      <h3>Career Development</h3>
+      <p>Guides staff through building a personal career development plan, identifying growth opportunities, and taking ownership of their professional path.</p>
+      <div class="mlinks">
+        <a class="btn btn-gold" href="https://youtu.be/67CoZ6A8OAE" target="_blank" rel="noopener">Watch the video</a>
+        <a class="btn btn-ghost" href="AJFC_CareerDevelopment_ResourceGuide.pdf" target="_blank" rel="noopener">Download guide</a>
+      </div>
+    </article>
+
+    <h2 class="grouplabel">Live Webinar Recordings</h2>
+    <p class="gsub">Recordings of the live sessions, available to revisit anytime.</p>
+
+    <article class="mod">
+      <span class="mtag">Live Webinar Recording</span>
+      <h3>Change Management, Problem-Solving and Decision-Making</h3>
+      <p>Practical frameworks to navigate organizational change, solve problems at the root cause, and make decisions that keep clients, mission, and compliance at the center, even when conditions are uncertain.</p>
+      <div class="mlinks">
+        <a class="btn btn-gold" href="https://youtu.be/pq2jRxNY8xc" target="_blank" rel="noopener">Watch the recording</a>
+        <a class="btn btn-ghost" href="AJFC_ChangeManagement_ResourceGuide.pdf" target="_blank" rel="noopener">Download guide</a>
+      </div>
+    </article>
+
+    <article class="mod">
+      <span class="mtag">Live Webinar Recording</span>
+      <h3>Service Excellence Suite: Communication, Customer Service, and Conflict Resolution</h3>
+      <p>Three interconnected competencies every AJFC staff member needs, active listening, trauma-informed client service, and conflict resolution, through practical frameworks and real-world scenarios rooted in the Community Action context.</p>
+      <div class="mlinks">
+        <a class="btn btn-gold" href="https://youtu.be/EwlAgxj3qVo" target="_blank" rel="noopener">Watch the recording</a>
+        <a class="btn btn-ghost" href="AJFC_ServiceExcellenceSuite_ResourceGuide.pdf" target="_blank" rel="noopener">Download guide</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="about">
+  <div class="wrap">
+    <div class="about-card">
+      <h2>About this training</h2>
+      <p>This training series was developed by Turner Training Institute&trade;, the training division of The Culture Pro&reg;, in partnership with AJFC Community Action Agency. The library includes four self-paced modules and two live webinar recordings covering the core professional competencies that support both organizational performance and individual growth. Watch at your own pace, download the companion resource guide for each training, and return to this page anytime.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fbrand">Turner Training Institute&trade; (TTI)</div>
+    <div class="tag">Where Learning Meets Lasting Impact.</div>
+    <div class="flinks">
+      <a href="https://www.turnertraininginstitute.com/">Main site</a>
+      <a href="mailto:nicole@theculturepro.com">Contact</a>
+    </div>
+    <div style="margin-top:14px;font-size:.82rem;color:#7E9694">&copy; 2026 Turner Training Institute&trade;. A division of The Culture Pro&reg;.</div>
+  </div>
+</footer>
+
+</body>
+</html>
