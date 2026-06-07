@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Turner Training Institute&trade; | Where Learning Meets Lasting Impact</title>
+<meta name="description" content="Turner Training Institute, the training division of The Culture Pro, builds leaders and teams for the 2030 workplace. Open-enrollment courses, leadership cohorts, and the Chief Culture Strategist Certificate, built on the Inside-Out Transformation Framework.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%230E2F33%22/%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%2213%22%20fill%3D%22%23C8893B%22/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Turner Training Institute">
+<meta property="og:title" content="Turner Training Institute | Where Learning Meets Lasting Impact">
+<meta property="og:description" content="Leadership cohorts, focused workshops, and the Chief Culture Strategist Certificate. Training that builds people and culture for the 2030 workplace.">
+<meta property="og:url" content="https://www.turnertraininginstitute.com/">
+<meta property="og:image" content="https://www.turnertraininginstitute.com/tti-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Turner Training Institute | Where Learning Meets Lasting Impact">
+<meta name="twitter:description" content="Leadership cohorts, focused workshops, and the Chief Culture Strategist Certificate. Training that builds people and culture for the 2030 workplace.">
+<meta name="twitter:image" content="https://www.turnertraininginstitute.com/tti-share.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F6F1E6;
+    --paper-2:#EFE8D8;
+    --ink:#0E2F33;
+    --ink-soft:#22484C;
+    --teal:#1F6F78;
+    --teal-deep:#15565E;
+    --gold:#C8893B;
+    --gold-deep:#A96E2A;
+    --terra:#B5562F;
+    --mist:#6E827F;
+    --line:#D8CFBC;
+    --card:#FBF8F0;
+    --shadow:rgba(14,47,51,.12);
+    --serif:'Fraunces',Georgia,serif;
+    --sans:'Hanken Grotesk',system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:var(--sans);background:var(--paper);color:var(--ink);
+    line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+  }
+  /* grain overlay */
+  body::before{
+    content:"";position:fixed;inset:0;z-index:9999;pointer-events:none;opacity:.05;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 28px}
+  .eyebrow{font-family:var(--sans);font-weight:600;font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--teal)}
+  h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.05;color:var(--ink);letter-spacing:-.01em}
+
+  /* NAV */
+  header{position:sticky;top:0;z-index:100;background:rgba(246,241,230,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  nav{display:flex;align-items:center;justify-content:space-between;height:72px;max-width:1160px;margin:0 auto;padding:0 28px}
+  .brand{display:flex;align-items:center;gap:11px;font-family:var(--serif);font-weight:600;font-size:1.16rem;color:var(--ink)}
+  .brand .dot{width:11px;height:11px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(200,137,59,.18)}
+  .brand small{font-family:var(--sans);font-weight:500;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mist);display:block;margin-top:1px}
+  .navlinks{display:flex;align-items:center;gap:26px}
+  .navlinks a{font-size:.92rem;font-weight:500;color:var(--ink-soft);transition:color .2s}
+  .navlinks a:hover{color:var(--teal)}
+  .btn{display:inline-block;font-family:var(--sans);font-weight:600;font-size:.92rem;padding:12px 22px;border-radius:40px;cursor:pointer;border:none;transition:transform .2s,box-shadow .2s,background .2s}
+  .btn-gold{background:var(--gold);color:#fff;box-shadow:0 6px 18px rgba(200,137,59,.32)}
+  .btn-gold:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(200,137,59,.42)}
+  .btn-ink{background:var(--ink);color:var(--paper)}
+  .btn-ink:hover{transform:translateY(-2px);background:var(--ink-soft)}
+  .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink);box-shadow:none}
+  .btn-ghost:hover{background:var(--ink);color:var(--paper)}
+  .navtoggle{display:none;background:none;border:none;font-size:1.5rem;color:var(--ink);cursor:pointer}
+
+  /* HERO */
+  .hero{position:relative;padding:84px 0 70px}
+  .hero-grid{display:grid;grid-template-columns:1.35fr .9fr;gap:48px;align-items:center}
+  .hero h1{font-size:clamp(2.6rem,5.6vw,4.5rem);margin:18px 0 0}
+  .hero h1 em{font-style:italic;color:var(--teal)}
+  .hero .lead{font-size:1.18rem;color:var(--ink-soft);max-width:34ch;margin:24px 0 32px}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+  .hero-anim>*{opacity:0;transform:translateY(18px);animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}
+  .hero-anim>*:nth-child(1){animation-delay:.05s}
+  .hero-anim>*:nth-child(2){animation-delay:.18s}
+  .hero-anim>*:nth-child(3){animation-delay:.31s}
+  .hero-anim>*:nth-child(4){animation-delay:.44s}
+  @keyframes rise{to{opacity:1;transform:none}}
+
+  /* ladder graphic */
+  .ladder{position:relative;height:360px;display:flex;flex-direction:column;gap:14px;justify-content:flex-start}
+  .rung{display:block;cursor:pointer;text-decoration:none;position:relative;border-radius:14px;padding:14px 18px;color:#fff;font-family:var(--sans);box-shadow:0 10px 26px var(--shadow);opacity:0;transform:translateX(24px);animation:slideIn .7s cubic-bezier(.2,.7,.2,1) forwards;transition:box-shadow .25s,filter .2s}
+  .rung:hover{box-shadow:0 16px 34px var(--shadow);filter:brightness(1.06)}
+  .rung .n{font-family:var(--serif);font-size:.82rem;opacity:.8}
+  .rung .t{font-weight:600;font-size:1.02rem;margin-top:2px}
+  .rung.r1{width:62%;background:var(--ink-soft);animation-delay:.5s}
+  .rung.r2{width:74%;background:var(--teal-deep);animation-delay:.66s}
+  .rung.r3{width:86%;background:var(--teal);animation-delay:.82s}
+  .rung.r4{width:100%;background:linear-gradient(100deg,var(--gold-deep),var(--gold));animation-delay:.98s}
+  @keyframes slideIn{to{opacity:1;transform:none}}
+
+  /* SECTION basics */
+  section{padding:78px 0}
+  .sec-head{max-width:60ch;margin-bottom:44px}
+  .sec-head h2{font-size:clamp(2rem,3.6vw,2.9rem);margin-top:10px}
+  .sec-head p{margin-top:14px;color:var(--ink-soft);font-size:1.06rem}
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  /* FRAMEWORK */
+  .framework{background:var(--ink);color:var(--paper)}
+  .framework .eyebrow{color:var(--gold)}
+  .framework h2{color:var(--paper)}
+  .framework .sec-head p{color:#C7D3D2}
+  .steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:14px;position:relative}
+  .steps::before{content:"";position:absolute;top:23px;left:8%;right:8%;height:2px;background:linear-gradient(90deg,var(--teal),var(--gold))}
+  .step{text-align:center;position:relative;padding:0 8px}
+  .step .circle{width:48px;height:48px;border-radius:50%;background:var(--teal);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:1.25rem;margin:0 auto 16px;position:relative;z-index:2;border:4px solid var(--ink)}
+  .step:nth-child(5) .circle{background:var(--gold)}
+  .step h3{color:var(--paper);font-size:1.15rem}
+  .step p{font-size:.86rem;color:#A9BAB8;margin-top:6px}
+
+  /* LADDER SECTION cards */
+  .tiers{display:grid;gap:18px}
+  .tier{display:grid;grid-template-columns:64px 1fr auto;gap:22px;align-items:center;background:var(--card);border:1px solid var(--line);border-left:5px solid var(--teal);border-radius:16px;padding:22px 26px;cursor:pointer;transition:transform .25s,box-shadow .25s}
+  .tier:hover{transform:translateX(6px);box-shadow:0 14px 30px var(--shadow)}
+  .tier .tnum{font-family:var(--serif);font-size:2.1rem;color:var(--teal);opacity:.55}
+  .tier h3{font-size:1.3rem}
+  .tier p{color:var(--ink-soft);font-size:.97rem;margin-top:4px}
+  .tier.t4{border-left-color:var(--gold);background:linear-gradient(100deg,#FBF3E4,var(--card))}
+  .tier.t4 .tnum{color:var(--gold)}
+  .tag{display:inline-block;font-size:.72rem;font-weight:600;letter-spacing:.04em;color:var(--mist);background:var(--paper-2);padding:4px 10px;border-radius:30px;white-space:nowrap}
+  .tend{display:flex;align-items:center;gap:14px}
+  .arrow{font-size:1.25rem;color:var(--teal);opacity:.45;transition:transform .25s,opacity .25s}
+  .tier:hover .arrow{opacity:1;transform:translateX(4px)}
+  .tier.t4 .arrow{color:var(--gold)}
+
+  /* COURSES */
+  .courses{background:var(--paper-2)}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .course{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s}
+  .course:hover{transform:translateY(-5px);box-shadow:0 18px 36px var(--shadow)}
+  .course .kind{font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-deep)}
+  .course h3{font-size:1.32rem;margin:10px 0 6px;line-height:1.12}
+  .course .fmt{font-size:.86rem;color:var(--mist);font-weight:500}
+  .course p{font-size:.95rem;color:var(--ink-soft);margin:13px 0 18px;flex:1}
+  .price{font-family:var(--serif);font-size:1.7rem;color:var(--ink);font-weight:600}
+  .price small{font-family:var(--sans);font-size:.8rem;color:var(--mist);font-weight:500}
+  .minnote{display:flex;gap:8px;align-items:flex-start;font-size:.78rem;color:var(--ink-soft);background:rgba(31,111,120,.08);border:1px dashed rgba(31,111,120,.35);border-radius:10px;padding:9px 11px;margin:14px 0 16px;line-height:1.4}
+  .minnote svg{flex-shrink:0;margin-top:1px}
+  .grouppx{font-size:.85rem;color:var(--ink-soft);margin:0 0 4px}
+  .grouppx a{color:var(--teal);font-weight:600;text-decoration:underline}
+  .waitnote{font-size:.9rem;color:var(--ink-soft);background:rgba(200,137,59,.1);border:1px solid rgba(200,137,59,.32);border-radius:11px;padding:11px 13px;margin:14px 0 12px;line-height:1.45}
+  .mdates{margin:16px 0 4px}
+  .mdates .lbl{font-size:.8rem;font-weight:600;color:var(--ink);margin-bottom:9px;display:block}
+  .mdates label.opt{display:flex;align-items:center;gap:10px;font-size:.92rem;color:var(--ink-soft);padding:9px 12px;border:1.5px solid var(--line);border-radius:10px;margin-bottom:7px;cursor:pointer;transition:border .15s,background .15s}
+  .mdates label.opt:hover{border-color:var(--teal);background:rgba(31,111,120,.04)}
+  .mdates input{accent-color:var(--teal);width:16px;height:16px;flex-shrink:0}
+  .group-head{margin:40px 0 4px}
+  .group-head.first{margin-top:6px}
+  .group-head h3{font-family:var(--serif);font-size:1.5rem;color:var(--ink)}
+  .group-head span{display:block;font-size:.92rem;color:var(--mist);margin-top:3px}
+  .course-row{margin-top:18px}
+  .dpreview{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+  .dpreview span{font-size:.73rem;font-weight:500;color:var(--teal-deep);background:rgba(31,111,120,.09);border:1px solid rgba(31,111,120,.22);border-radius:20px;padding:3px 10px}
+  .course .btn{width:100%;text-align:center}
+
+  /* teams strip */
+  .teams{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center}
+  .teams .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+  .chip{background:var(--card);border:1px solid var(--line);border-radius:30px;padding:9px 16px;font-size:.86rem;font-weight:500;color:var(--ink-soft)}
+
+  /* PAYMENT/ENROLL info */
+  .how{background:var(--ink);color:var(--paper)}
+  .how .eyebrow{color:var(--gold)}
+  .how h2{color:var(--paper)}
+  .howgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:36px}
+  .howcard{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:26px}
+  .howcard .num{font-family:var(--serif);font-size:1.5rem;color:var(--gold)}
+  .howcard h3{color:var(--paper);font-size:1.16rem;margin:8px 0 8px}
+  .howcard p{font-size:.92rem;color:#BFCECC}
+  .square-badge{display:inline-flex;align-items:center;gap:8px;margin-top:26px;font-size:.86rem;color:#BFCECC}
+  .square-badge b{color:var(--paper)}
+
+  /* ABOUT */
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .about-grid .stat{font-family:var(--serif);font-size:2.6rem;color:var(--teal)}
+  .about-list{display:grid;gap:14px;margin-top:8px}
+  .about-list div{padding-left:20px;position:relative;color:var(--ink-soft)}
+  .about-list div::before{content:"";position:absolute;left:0;top:10px;width:8px;height:8px;border-radius:50%;background:var(--gold)}
+
+  /* CTA */
+  .cta{text-align:center;background:linear-gradient(120deg,var(--teal-deep),var(--teal));color:#fff;border-radius:26px;padding:64px 32px;margin:0 28px}
+  .cta h2{color:#fff;font-size:clamp(1.9rem,3.4vw,2.7rem)}
+  .cta p{max-width:48ch;margin:14px auto 28px;color:#DCEAE9;font-size:1.06rem}
+
+  /* CONTACT FORM */
+  .contactgrid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+  .contactgrid .eyebrow{color:var(--teal)}
+  .contactgrid h2{font-size:2.2rem;margin-top:10px}
+  .contactgrid p{color:var(--ink-soft);margin-top:14px}
+  .cform{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:30px;box-shadow:0 14px 30px var(--shadow)}
+  .cform label{display:block;font-size:.78rem;font-weight:600;color:var(--ink);margin:0 0 6px;letter-spacing:.02em}
+  .cform .field{margin-bottom:15px}
+  .cform input,.cform select,.cform textarea{width:100%;font-family:var(--sans);font-size:.95rem;color:var(--ink);background:var(--paper);border:1.5px solid var(--line);border-radius:11px;padding:12px 14px;transition:border .2s}
+  .cform input:focus,.cform select:focus,.cform textarea:focus{outline:none;border-color:var(--teal)}
+  .cform textarea{min-height:108px;resize:vertical}
+  .cform .btn{width:100%;text-align:center;margin-top:4px}
+  .formmsg{margin-top:14px;font-size:.92rem;padding:12px 14px;border-radius:11px;display:none}
+  .formmsg.ok{display:block;background:rgba(31,111,120,.1);color:var(--teal-deep);border:1px solid rgba(31,111,120,.3)}
+  .formmsg.err{display:block;background:rgba(181,86,47,.1);color:var(--terra);border:1px solid rgba(181,86,47,.35)}
+
+  /* FOOTER */
+  footer{padding:54px 0 40px;border-top:1px solid var(--line);margin-top:78px}
+  .foot{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;align-items:flex-start}
+  .foot .brand{font-size:1.05rem}
+  .foot p{font-size:.86rem;color:var(--mist);margin-top:10px;max-width:34ch}
+  .foot .cols{display:flex;gap:54px}
+  .foot h4{font-family:var(--sans);font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);margin-bottom:12px}
+  .foot a{display:block;font-size:.9rem;color:var(--ink-soft);margin-bottom:8px}
+  .foot a:hover{color:var(--teal)}
+  .legal{margin-top:34px;font-size:.78rem;color:var(--mist);text-align:center}
+  .tagline{font-family:var(--serif);font-style:italic;color:var(--gold-deep)}
+
+  /* MODAL */
+  .modal{position:fixed;inset:0;z-index:1000;display:none;align-items:center;justify-content:center;padding:24px;background:rgba(14,47,51,.55);backdrop-filter:blur(4px)}
+  .modal.open{display:flex}
+  .modal-box{background:var(--card);border-radius:20px;max-width:480px;width:100%;padding:34px;box-shadow:0 30px 70px rgba(0,0,0,.3);position:relative;animation:rise .4s ease}
+  .modal-box .close{position:absolute;top:16px;right:18px;background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--mist)}
+  .modal-box .kind{font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-deep)}
+  .modal-box h3{font-size:1.6rem;margin:8px 0 4px}
+  .modal-box .fmt{color:var(--mist);font-size:.9rem}
+  .modal-box .price{margin:18px 0 4px}
+  .modal-box .btn{width:100%;text-align:center;margin-top:18px}
+
+  @media(max-width:900px){
+    .hero-grid{grid-template-columns:1fr}.ladder{height:auto}
+    .steps{grid-template-columns:1fr 1fr;gap:30px 10px}.steps::before{display:none}
+    .grid,.howgrid{grid-template-columns:1fr 1fr}
+    .teams,.about-grid{grid-template-columns:1fr;gap:26px}
+    .contactgrid{grid-template-columns:1fr;gap:30px}
+  }
+  @media(max-width:680px){
+    .navlinks{display:none}.navtoggle{display:block}
+    .grid,.howgrid{grid-template-columns:1fr}
+    .tier{grid-template-columns:48px 1fr;}.tier .tag{display:none}
+    .foot{flex-direction:column}.foot .cols{gap:34px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="brand" href="#top">
+      <span class="dot"></span>
+      <span>Turner Training Institute&trade;<small>A division of The Culture Pro&reg;</small></span>
+    </a>
+    <div class="navlinks">
+      <a href="#framework">Framework</a>
+      <a href="#ladder">The Ladder</a>
+      <a href="#courses">Courses</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-gold" href="#courses">Join Waitlist</a>
+    </div>
+    <button class="navtoggle" onclick="document.querySelector('.navlinks').style.display='flex'">&#9776;</button>
+  </nav>
+</header>
+
+<a id="top"></a>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-anim">
+      <span class="eyebrow">Leadership &middot; Culture &middot; Workforce Development</span>
+      <h1>Developing Leaders. Strengthening Teams. <em>Transforming Culture.</em></h1>
+      <p class="lead">Built on the Inside-Out Transformation Framework&trade;, TTI prepares people and organizations for the 2030 workplace: human-and-AI teams, a skills-first workforce, and teams that stay resilient through constant change.</p>
+      <div class="hero-cta">
+        <a class="btn btn-gold" href="#courses">Explore the Courses</a>
+        <a class="btn btn-ghost" href="#framework">See the Method</a>
+      </div>
+    </div>
+    <div class="ladder">
+      <a class="rung r2" href="#tier-1"><div class="n">Tier 1</div><div class="t">Focused Workshops</div></a>
+      <a class="rung r3" href="#tier-2"><div class="n">Tier 2</div><div class="t">Signature Cohorts</div></a>
+      <a class="rung r4" href="#tier-3"><div class="n">Tier 3</div><div class="t">Chief Culture Strategist Certificate</div></a>
+    </div>
+  </div>
+</section>
+
+<section class="framework" id="framework">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">The Method</span>
+      <h2>The Inside-Out Transformation Framework&trade;</h2>
+      <p>Lasting change starts on the inside and works outward. Every program moves people and organizations through five stages, so growth is not a one-time event but a system that holds.</p>
+    </div>
+    <div class="steps reveal">
+      <div class="step"><div class="circle">1</div><h3>Mindset</h3><p>Shift how people think before asking them to act.</p></div>
+      <div class="step"><div class="circle">2</div><h3>Behaviors</h3><p>Turn new thinking into daily practice.</p></div>
+      <div class="step"><div class="circle">3</div><h3>Systems</h3><p>Build the structures that make it stick.</p></div>
+      <div class="step"><div class="circle">4</div><h3>Strategy</h3><p>Connect the work to where the organization is going.</p></div>
+      <div class="step"><div class="circle">5</div><h3>Results</h3><p>Measure what matters and sustain it.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="ladder">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">How the Learning Connects</span>
+      <h2>One path, not a menu</h2>
+      <p>People enter at the level that fits them and keep climbing. Each tier feeds the next.</p>
+    </div>
+    <div class="tiers">
+      <div class="tier reveal" id="tier-1" role="button" tabindex="0" onclick="openTier('t1')"><div class="tnum">01</div><div><h3>Focused Workshops</h3><p>Skill builders from working with AI to communication, conflict, change, and resilience. One hour, half day, or full day.</p></div><div class="tend"><span class="tag">Flexible</span><span class="arrow">&#8594;</span></div></div>
+      <div class="tier reveal" id="tier-2" role="button" tabindex="0" onclick="openTier('t2')"><div class="tnum">02</div><div><h3>Signature Cohorts</h3><p>Flagship leadership experiences run as multi-week virtual cohorts with weekly live sessions and guided self-work.</p></div><div class="tend"><span class="tag">5 to 8 weeks</span><span class="arrow">&#8594;</span></div></div>
+      <div class="tier reveal t4" id="tier-3" role="button" tabindex="0" onclick="openTier('t3')"><div class="tnum">03</div><div><h3>Chief Culture Strategist (CCS) Certificate</h3><p>The capstone credential for those who will lead culture as a strategic lever. A 64-hour cohort credential.</p></div><div class="tend"><span class="tag">64 hours</span><span class="arrow">&#8594;</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="courses" id="courses">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Open Enrollment</span>
+      <h2>Upcoming courses</h2>
+      <p>Each course lists proposed dates and is currently delivered live online. Join the waitlist and pick the date or dates that work for you. A session is confirmed once at least five people sign on for it, and payment (per attendee) is collected only then. Two ways to save: cohort programs include a $200 early-bird discount for enrolling early, and groups of three or more from the same organization receive a group rate. <a href="#contact" style="color:var(--teal);font-weight:600">Ask when you join the waitlist</a>.</p>
+    </div>
+    <div id="courseGrid"></div>
+
+    <div class="teams reveal" style="margin-top:56px">
+      <div>
+        <span class="eyebrow">Bring It To Your Team</span>
+        <h2 style="font-size:1.9rem;margin-top:10px">Private and custom delivery</h2>
+        <p style="color:var(--ink-soft);margin-top:12px">Any program can be delivered privately and tailored to your organization's goals, challenges, and culture. Need training on a subject not listed here? That can be built for you too. Ideal for intact teams and full departments.</p>
+      </div>
+      <div style="text-align:center">
+        <a class="btn btn-ink" href="#contact">Request a Custom Program</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="how">
+  <div class="wrap">
+    <div class="sec-head reveal" style="max-width:62ch">
+      <span class="eyebrow">How Enrollment Works</span>
+      <h2>Join now, pay once there's a date</h2>
+    </div>
+    <div class="howgrid">
+      <div class="howcard reveal"><div class="num">01</div><h3>Join the waitlist</h3><p>Pick a course and add your name. No payment is required to join, and you tell us which course you want.</p></div>
+      <div class="howcard reveal"><div class="num">02</div><h3>A date is set</h3><p>Once at least five people are interested, the cohort is scheduled and everyone on the waitlist is notified of the dates.</p></div>
+      <div class="howcard reveal"><div class="num">03</div><h3>Pay securely with Square</h3><p>Lock your seat with a secure Square payment once your course has a confirmed date. Your card details are never stored on this site.</p></div>
+    </div>
+    <div class="square-badge reveal"><span>Payments processed by <b>Square</b>. PCI-compliant and encrypted.</span></div>
+    <div class="reveal" style="margin-top:34px;max-width:780px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px 28px">
+      <h3 style="font-family:var(--serif);font-size:1.15rem;color:var(--ink);margin-bottom:8px">Payment and cancellation policy</h3>
+      <p style="color:var(--ink-soft);font-size:.95rem;line-height:1.55">Your payment reserves your seat. We do not offer refunds. If you cannot attend after registering, you may transfer your seat to someone else at no charge, or take a full credit toward any other Turner Training Institute&trade; course, valid for 12 months. If a course is rescheduled or cancelled by Turner Training Institute&trade;, you may move to the next available session or take a full credit of equal value. Please let us know before the course begins. Questions? <a href="#contact" style="color:var(--teal);font-weight:600">Contact us</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="reveal">
+      <span class="eyebrow">About</span>
+      <h2 style="font-size:2.3rem;margin-top:10px">Empowering people. Transforming organizations.</h2>
+      <p style="color:var(--ink-soft);margin-top:16px">Turner Training Institute&trade; equips people at every level with the tools to lead confidently, communicate well, and perform with purpose. As the training division of The Culture Pro&reg;, TTI specializes in leadership development, workforce upskilling, and training that strengthens both people and culture.</p>
+      <p style="color:var(--ink-soft);margin-top:14px">TTI is designed for where work is heading, not where it has been: human-and-AI teams, a skills-first workforce, and cultures that stay resilient under pressure.</p>
+    </div>
+    <div class="reveal">
+      <div class="about-list">
+        <div><strong>Future-ready by design.</strong> Built for AI integration, the skills economy, and a multigenerational workforce.</div>
+        <div><strong>People-first method.</strong> Focused on the human side of business and the realities of the workplace ahead.</div>
+        <div><strong>Practical and measurable.</strong> Every program connects to real outcomes, not training for its own sake.</div>
+        <div><strong>One proven framework.</strong> The Inside-Out Transformation Framework&trade; runs through everything.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="cta reveal">
+    <h2>Ready to develop your people?</h2>
+    <p>Enroll in an open course above, or request a private program built for your team. Learning that meets people where they are and moves them forward.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+      <a class="btn btn-gold" href="#courses">Browse Courses</a>
+      <a class="btn btn-ghost" style="color:#fff;border-color:#fff" href="#contact">Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contactgrid">
+    <div class="reveal">
+      <span class="eyebrow">Get in Touch</span>
+      <h2>Let's develop your people</h2>
+      <p>Want to join a course waitlist, bring a program to your team, or ask about something else entirely? Send a note and you will hear back soon.</p>
+      <div class="about-list" style="margin-top:22px">
+        <div>Join a course waitlist and get date updates</div>
+        <div>Request a private or customized program</div>
+        <div>Explore the Chief Culture Strategist Certificate</div>
+        <div>Reach out about anything else</div>
+      </div>
+    </div>
+    <form class="cform reveal" id="contactForm" action="https://formspree.io/f/maqzeenw" method="POST">
+      <div class="field"><label for="cf-name">Name</label><input id="cf-name" type="text" name="name" required></div>
+      <div class="field"><label for="cf-email">Email</label><input id="cf-email" type="email" name="email" required></div>
+      <div class="field"><label for="cf-org">Organization</label><input id="cf-org" type="text" name="organization"></div>
+      <div class="field"><label for="cf-interest">I am interested in</label>
+        <select id="cf-interest" name="interest">
+          <option>How can I help?</option>
+          <option>Joining a course waitlist</option>
+          <option>A private program for my team</option>
+          <option>The Chief Culture Strategist Certificate</option>
+          <option>Something else (general inquiry)</option>
+        </select>
+      </div>
+      <div class="field"><label for="cf-msg">Message</label><textarea id="cf-msg" name="message" required></textarea></div>
+      <button class="btn btn-gold" type="submit">Send Message</button>
+      <div class="formmsg" id="formMsg"></div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <a class="brand" href="#top"><span class="dot"></span><span>Turner Training Institute&trade;<small>A division of The Culture Pro&reg;</small></span></a>
+      <p>Where Learning Meets Lasting Impact.</p>
+    </div>
+    <div class="cols">
+      <div>
+        <h4>Explore</h4>
+        <a href="#framework">The Framework</a>
+        <a href="#ladder">The Learning Ladder</a>
+        <a href="#courses">Courses</a>
+        <a href="#about">About</a>
+      </div>
+      <div>
+        <h4>Enroll</h4>
+        <a href="#courses">Open Enrollment</a>
+        <a href="#contact">Custom Programs</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+  <div class="legal">&copy; 2026 The Culture Pro&reg;. All Rights Reserved. Turner Training Institute&trade; is a division of The Culture Pro&reg;. &nbsp; <span class="tagline">Where Learning Meets Lasting Impact.</span></div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <button class="close" onclick="closeModal()">&times;</button>
+    <div class="kind" id="mKind"></div>
+    <h3 id="mTitle"></h3>
+    <div class="fmt" id="mFmt"></div>
+    <div class="price" id="mPrice"></div>
+    <div id="mDates" class="mdates"></div>
+    <div class="waitnote">Choose the date(s) that work for you. A session is confirmed once at least five people sign on for it, and no payment is collected until then.</div>
+    <div class="minnote">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1F6F78" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+      <span>This course runs only if at least five participants join. The waitlist is how a cohort reaches its start date.</span>
+    </div>
+    <div class="grouppx">Groups of three or more save. <a href="#contact" onclick="closeModal()">Ask about group pricing</a>.</div>
+    <button class="btn btn-gold" onclick="joinWaitlist()">Join the waitlist</button>
+  </div>
+</div>
+
+<!-- TIER DESCRIPTION MODAL -->
+<div class="modal" id="tierModal">
+  <div class="modal-box">
+    <button class="close" onclick="closeTier()">&times;</button>
+    <div class="kind" id="tKind"></div>
+    <h3 id="tTitle"></h3>
+    <p id="tBody" style="color:var(--ink-soft);margin-top:14px"></p>
+    <a class="btn btn-gold" href="#courses" onclick="closeTier()">Browse the courses</a>
+  </div>
+</div>
+
+<script>
+  /* ============================================================
+     SQUARE PAYMENT LINKS
+     Replace each "#" with the Square payment link for that course,
+     created in your Square Dashboard (Online > Checkout Links).
+     ============================================================ */
+  const SQUARE_LINKS = {
+    "leadership-dev": "https://square.link/u/Hxa4W8Vp",
+    "emerging-leaders": "https://square.link/u/MS15y5vr",
+    "ccs": "https://square.link/u/sTlkqdoq",
+    "leading-ai": "https://square.link/u/V4rmmCNI",
+    "succession": "https://square.link/u/le1ILFIn",
+    "self-driven": "https://square.link/u/ND9NJVPJ",
+    "tech-to-manager": "https://square.link/u/q2wzX91D",
+    "think-ai": "https://square.link/u/do6TE3Pn",
+    "communications": "https://square.link/u/nplMh9rL",
+    "conflict": "https://square.link/u/CMg1Ut9P",
+    "resilient": "https://square.link/u/etoBiwZo",
+    "leading-change": "https://square.link/u/Umdnk6mm",
+    "navigating-change": "https://square.link/u/DDDLDuPD"
+  };
+
+  const COURSES = [
+    // Cohort Programs
+    { id:"leadership-dev", group:"Cohort Programs", kind:"Leadership Cohort", title:"Leadership Development Program",
+      fmt:"40 hours &middot; 6 sessions &middot; cohort",
+      desc:"Develops the core capabilities of effective leaders: leading people, driving results, coaching and developing talent, and building a healthy team culture. Meets weekly for two hours, with guided work between sessions. The listed hours include that self-work.",
+      price:"$2,495", per:"per attendee", confirmed:false,
+      dates:["Starts July 9, 2026 (6 weeks)","Starts September 2, 2026 (6 weeks)"] },
+    { id:"emerging-leaders", group:"Cohort Programs", kind:"Leadership Cohort", title:"Emerging Leaders Program",
+      fmt:"32 hours &middot; 5 sessions &middot; cohort",
+      desc:"Prepares high-potential employees and new leaders to step up with confidence and build the foundational skills of leading others. Meets weekly for 90 minutes, with guided work between sessions. The listed hours include that self-work.",
+      price:"$1,695", per:"per attendee", confirmed:false,
+      dates:["Starts August 20, 2026 (5 weeks)","Starts October 14, 2026 (5 weeks)"] },
+    { id:"ccs", group:"Cohort Programs", kind:"Capstone Credential", title:"Chief Culture Strategist (CCS) Certificate",
+      fmt:"64 hours &middot; 8 sessions &middot; cohort",
+      desc:"Architect culture as a strategic performance lever. The flagship credential for culture leaders across sectors, culminating in a Capstone project. Meets weekly for three hours of live instruction over eight weeks, plus about five hours a week of project and self-study. The 64 total hours include both.",
+      price:"$3,950", per:"per attendee", confirmed:false,
+      dates:["Starts October 8, 2026 (8 weeks)"] },
+    // Full-Day Courses
+    { id:"leading-ai", group:"Full-Day Courses", kind:"Full-Day Course", title:"Leading in the Age of AI: Empowering Human-AI Collaboration",
+      fmt:"Full day",
+      desc:"For leaders guiding AI adoption: understand what AI can and cannot do, lead your team through change with confidence, set ethical guardrails, orchestrate human-and-AI teamwork, and leave with a personal AI leadership action plan.",
+      price:"$1,025", per:"per attendee", confirmed:false,
+      dates:["July 7, 2026","October 6, 2026"] },
+    { id:"succession", group:"Full-Day Courses", kind:"Full-Day Course", title:"Future Ready: Succession Planning for Sustainable Success",
+      fmt:"Full day",
+      desc:"Identify critical roles, build a bench, and move expertise to the next leaders before it walks out the door. A full-day working session.",
+      price:"$995", per:"per attendee", confirmed:false,
+      dates:["July 10, 2026","November 17, 2026"] },
+    // Half-Day Courses
+    { id:"self-driven", group:"Half-Day Courses", kind:"Half-Day Course", title:"Self-Driven Leadership: Mastering the Power of Leading You",
+      fmt:"Half day &middot; 4 hours",
+      desc:"Lead yourself first. Build the self-awareness, ownership, and habits that strong leadership is built on.",
+      price:"$650", per:"per attendee", confirmed:false,
+      dates:["June 30, 2026","September 15, 2026"] },
+    { id:"tech-to-manager", group:"Half-Day Courses", kind:"Half-Day Course", title:"Moving from Technical Professional to Manager",
+      fmt:"Half day &middot; 4 hours",
+      desc:"The shift from doing the work to leading the people who do it. Core skills for newly promoted managers.",
+      price:"$650", per:"per attendee", confirmed:false,
+      dates:["July 17, 2026","October 20, 2026"] },
+    { id:"leading-change", group:"Half-Day Courses", kind:"Half-Day Course", title:"Leading Through Change and Uncertainty",
+      fmt:"Half day",
+      desc:"Lead people through disruption with steadiness, helping teams adapt and keep moving forward.",
+      price:"$650", per:"per attendee", confirmed:false,
+      dates:["September 22, 2026","December 4, 2026"] },
+    { id:"think-ai", group:"Half-Day Courses", kind:"Half-Day Course", title:"Think With AI",
+      fmt:"Half day",
+      desc:"A practical, hands-on session on working with AI in everyday tasks: how to direct it, write good prompts, check its output, and keep your own judgment in charge. For any team member, no technical background needed.",
+      price:"$495", per:"per attendee", confirmed:false,
+      dates:["August 5, 2026","November 18, 2026"] },
+    { id:"communications", group:"Half-Day Courses", kind:"Half-Day Course", title:"Effective Communications",
+      fmt:"Half day",
+      desc:"Practical skills for clear, confident communication that builds relationships and gets work done.",
+      price:"$495", per:"per attendee", confirmed:false,
+      dates:["August 4, 2026","October 13, 2026"] },
+    { id:"conflict", group:"Half-Day Courses", kind:"Half-Day Course", title:"Conflict Resolution",
+      fmt:"Half day",
+      desc:"Navigate disagreement with confidence. Tools to address tension early and reach resolution that holds.",
+      price:"$495", per:"per attendee", confirmed:false,
+      dates:["August 25, 2026","December 2, 2026"] },
+    { id:"navigating-change", group:"Half-Day Courses", kind:"Half-Day Course", title:"Navigating Change and Transition",
+      fmt:"Half day &middot; 4 hours",
+      desc:"Move through workplace change with confidence. Manage your own response when priorities shift, then navigate transition well as a team.",
+      price:"$495", per:"per attendee", confirmed:false,
+      dates:["August 14, 2026","November 10, 2026"] },
+    { id:"resilient", group:"Half-Day Courses", kind:"Half-Day Course", title:"The Resilient Workforce",
+      fmt:"Half day",
+      desc:"Mental fitness and energy-management practices that protect performance under pressure.",
+      price:"$495", per:"per attendee", confirmed:false,
+      dates:["September 11, 2026","December 9, 2026"] }
+  ];
+
+  const minSvg = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1F6F78" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>';
+  const checkSvg = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1F6F78" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>';
+
+  const grid = document.getElementById('courseGrid');
+  const GROUPS = [
+    { name:"Cohort Programs", note:"Multi-week virtual cohorts. Weekly live sessions plus guided self-work." },
+    { name:"Full-Day Courses", note:"A single full day, by date." },
+    { name:"Half-Day Courses", note:"A focused half day, by date." }
+  ];
+  GROUPS.forEach((g, gi)=>{
+    const items = COURSES.filter(c=>c.group===g.name);
+    if(!items.length) return;
+    const head = document.createElement('div');
+    head.className = 'group-head reveal' + (gi===0 ? ' first' : '');
+    head.innerHTML = `<h3>${g.name}</h3><span>${g.note}</span>`;
+    grid.appendChild(head);
+    const row = document.createElement('div');
+    row.className = 'grid course-row';
+    items.forEach(c=>{
+      const el = document.createElement('div');
+      el.className = 'course reveal';
+      const dpreview = (c.dates && c.dates.length)
+        ? `<div class="dpreview">${c.dates.map(d=>'<span>'+d+'</span>').join('')}</div>` : '';
+      el.innerHTML = `
+        <div class="kind">${c.kind}</div>
+        <h3>${c.title}</h3>
+        <div class="fmt">${c.fmt}</div>
+        <p>${c.desc}</p>
+        ${dpreview}
+        <div class="price">${c.price} <small>${c.per}</small></div>
+        ${c.confirmed
+          ? `<div class="minnote">${checkSvg}<span>Confirmed session. Seats are open.</span></div>
+        <a class="btn btn-gold" href="${SQUARE_LINKS[c.id]||'#'}" target="_blank" rel="noopener">Reserve your seat</a>`
+          : `<div class="minnote">${minSvg}<span>Runs only if at least five participants join.</span></div>
+        <button class="btn btn-ink" onclick="openModal('${c.id}')">Join the waitlist</button>`}`;
+      row.appendChild(el);
+    });
+    grid.appendChild(row);
+  });
+
+  let currentCourseTitle = "";
+  function openModal(id){
+    const c = COURSES.find(x=>x.id===id);
+    currentCourseTitle = c.title;
+    document.getElementById('mKind').textContent = c.kind;
+    document.getElementById('mTitle').textContent = c.title;
+    document.getElementById('mFmt').innerHTML = c.fmt;
+    document.getElementById('mPrice').innerHTML = c.price + ' <small>'+c.per+'</small>';
+    const dwrap = document.getElementById('mDates');
+    if(c.dates && c.dates.length){
+      dwrap.innerHTML = '<span class="lbl">Which date(s) work for you?</span>' +
+        c.dates.map(d=>`<label class="opt"><input type="checkbox" value="${d}"> ${d}</label>`).join('');
+    } else {
+      dwrap.innerHTML = '<span class="lbl">Dates are being planned. Tell us your preferred timing in the form.</span>';
+    }
+    document.getElementById('modal').classList.add('open');
+  }
+  function joinWaitlist(){
+    const interest = document.getElementById('cf-interest');
+    if(interest){ for(const o of interest.options){ if(o.text === 'Joining a course waitlist'){ o.selected = true; break; } } }
+    const checked = Array.from(document.querySelectorAll('#mDates input:checked')).map(x=>x.value);
+    const datePart = checked.length ? ' Preferred date(s): ' + checked.join('; ') + '.' : '';
+    const msg = document.getElementById('cf-msg');
+    if(msg) msg.value = 'Waitlist request for: ' + currentCourseTitle + '.' + datePart + ' Please notify me when a date is confirmed.';
+    closeModal();
+    const c = document.getElementById('contact');
+    if(c) c.scrollIntoView({ behavior:'smooth' });
+    const nm = document.getElementById('cf-name');
+    if(nm) setTimeout(()=>nm.focus(), 500);
+  }
+  function closeModal(){ document.getElementById('modal').classList.remove('open'); }
+  document.getElementById('modal').addEventListener('click', e=>{ if(e.target.id==='modal') closeModal(); });
+  document.addEventListener('keydown', e=>{ if(e.key==='Escape'){ closeModal(); closeTier(); } });
+
+  /* tier short descriptions */
+  const TIERS = {
+    t1:{ kind:"Tier 1", title:"Focused Workshops",
+      body:"Targeted skill builders offered as one hour, a half day, or a full day. Each works on its own or as a lead-in to a cohort. Topics range from working with AI to communication, conflict resolution, change, and resilience." },
+    t2:{ kind:"Tier 2", title:"Signature Cohorts",
+      body:"Flagship leadership experiences run as multi-week virtual cohorts with weekly live sessions and guided self-work. The Leadership Development Program and the Emerging Leaders Program build the capabilities leaders need for today's workplace and the one ahead." },
+    t3:{ kind:"Tier 3", title:"Chief Culture Strategist (CCS) Certificate",
+      body:"The capstone credential for those who will lead culture as a strategic lever. A 64-hour, eight-session cohort that certifies a Chief Culture Strategist able to connect culture to measurable results, built on the Inside-Out Transformation Framework\u2122." }
+  };
+  function openTier(k){
+    const t = TIERS[k];
+    document.getElementById('tKind').textContent = t.kind;
+    document.getElementById('tTitle').textContent = t.title;
+    document.getElementById('tBody').textContent = t.body;
+    document.getElementById('tierModal').classList.add('open');
+  }
+  function closeTier(){ document.getElementById('tierModal').classList.remove('open'); }
+  document.getElementById('tierModal').addEventListener('click', e=>{ if(e.target.id==='tierModal') closeTier(); });
+  document.querySelectorAll('.tier').forEach(el=>{
+    el.addEventListener('keydown', e=>{ if(e.key==='Enter' || e.key===' '){ e.preventDefault(); el.click(); } });
+  });
+  document.querySelectorAll('.rung').forEach(el=>{
+    el.addEventListener('keydown', e=>{ if(e.key==='Enter' || e.key===' '){ e.preventDefault(); el.click(); } });
+  });
+
+  /* contact form (Formspree) */
+  const cform = document.getElementById('contactForm');
+  const fmsg = document.getElementById('formMsg');
+  function showFormMsg(text, ok){ fmsg.textContent = text; fmsg.className = 'formmsg ' + (ok ? 'ok' : 'err'); }
+  cform.addEventListener('submit', async (e)=>{
+    e.preventDefault();
+    const action = cform.getAttribute('action');
+    if(action.indexOf('YOUR_FORM_ID') !== -1){
+      showFormMsg('To activate this form, create a free form at formspree.io and replace YOUR_FORM_ID in the form action with your form ID. Submissions will then arrive in your inbox.', false);
+      return;
+    }
+    try{
+      const res = await fetch(action, { method:'POST', body:new FormData(cform), headers:{ 'Accept':'application/json' } });
+      if(res.ok){ cform.reset(); showFormMsg('Thank you. Your message has been sent.', true); }
+      else { showFormMsg('Something went wrong. Please try again, or email info@theculturepro.com.', false); }
+    }catch(err){
+      showFormMsg('Something went wrong. Please try again, or email info@theculturepro.com.', false);
+    }
+  });
+
+  /* scroll reveal */
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
